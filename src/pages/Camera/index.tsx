@@ -13,10 +13,10 @@ const Camera: React.FC = () => {
   return (
     <ScrollView>
       <View style={styles.container}>
-        <TouchableOpacity style={styles.container}>
+        <TouchableOpacity>
           <Image source={img} style={styles.image} />
+          <Button>Enviar</Button>
         </TouchableOpacity>
-        <Button>Enviar</Button>
       </View>
     </ScrollView>
   );
@@ -24,17 +24,18 @@ const Camera: React.FC = () => {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 0,
-    // backgroundColor: 'blue',
-    flexDirection: 'row-reverse',
-    flexWrap: 'wrap',
+    flex: 1,
+    alignItems: 'center',
+    alignContent: 'center',
+    paddingTop: 0,
+    // paddingBottom: 30,
   },
 
   image: {
     resizeMode: 'contain',
     width: deviceWidth,
 
-    height: deviceHeight - 120,
+    height: deviceHeight - 95,
   },
 });
 
