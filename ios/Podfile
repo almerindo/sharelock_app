@@ -12,6 +12,7 @@ target 'appsharelockholmes' do
 
   pod 'RNImageMarker', :path => '../node_modules/react-native-image-marker'
 
+
   target 'appsharelockholmesTests' do
     inherit! :complete
     # Pods for testing
